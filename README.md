@@ -16,7 +16,7 @@ A class that copies the best checkpoints for pytorch
         train(epoch) #training
         score = test() #testing with returning score
         save_iter_checkpoint(epoch) #save model for each epoch
-        BestCheckpointCopier(score, checkpoint_path)
+        best_saver(score, checkpoint_path)
   .
   .
   .
