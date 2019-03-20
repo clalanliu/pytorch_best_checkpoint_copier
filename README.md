@@ -21,8 +21,8 @@ A class that copies the best checkpoints for pytorch
   .
   .
   .
-  PATH = best_saver.get_best(weight_dir = 'weight')
-  checkpoint = torch.load(PATH)
+  best_checkpoint_path = best_saver.get_best(weight_dir = 'weight')
+  checkpoint = torch.load(best_checkpoint_path)
   .
   .
   .
